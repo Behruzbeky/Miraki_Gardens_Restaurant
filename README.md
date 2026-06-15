@@ -1,14 +1,32 @@
-# Miraki_Gardens_Restaurant
-Miraki Gardens — сайт ресторана
+# Miraki Gardens — сайт ресторана
 
 Многостраничный сайт ресторана при горном курорте Miraki Gardens.
 Премиум-минимализм, три языка (UZ / RU / EN), интерактивная бронь, галерея
 с раскрывающимися панелями.
 
-Страницы
+## Страницы
+- `index.html` — главная
+- `menu.html` — меню
+- `about.html` — о ресторане
+- `gallery.html` — галерея
+- `reservations.html` — бронирование
 
-index.html — главная
-menu.html — меню
-about.html — о ресторане
-gallery.html — галерея
-reservations.html — бронирование
+## Как открыть локально
+Просто открой `index.html` в браузере (всё работает без сборки).
+Стили, скрипты и переводы встроены в каждую страницу.
+
+## Фотографии
+Сейчас в демо подгружаются бесплатные фото с Pexels (см. `PHOTO-CREDITS.md`).
+Перед боевым запуском лучше скачать их в максимальном размере и положить в
+папку `images/` под именами из `PHOTO-CHECKLIST.md` — или заменить на реальные
+снимки Miraki. Размер не важен: фото кадрируется автоматически (`object-fit: cover`).
+
+## Публикация на GitHub Pages
+1. Создай репозиторий на GitHub (например, `miraki-gardens`).
+2. Залей в него содержимое этой папки (через `git` или «Upload files» на сайте).
+3. Settings → Pages → Build and deployment → Source: **Deploy from a branch**,
+   Branch: **main**, папка: **/ (root)** → Save.
+4. Через минуту сайт будет доступен по адресу
+   `https://<твой-логин>.github.io/miraki-gardens/`.
+
+Файл `.nojekyll` уже добавлен — он нужен, чтобы Pages отдавал все файлы как есть.
